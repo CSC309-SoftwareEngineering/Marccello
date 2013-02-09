@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Marcello</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+	<head>
+		<title>Marccello</title>
+			<%= stylesheet_link_tag    "application", :media => "all" %>
+			<%= javascript_include_tag "application" %>
+			<%= csrf_meta_tags %>
+			
+		<style type="text/css" media="screen">
+			li
+			{
+				list-style-type: none;
+				display: inline;
+				padding: 0.25em;
+			}
+		</style>
+	</head>
+	<body>
+		<fieldset>
+			<legend>application.html.erb</legend>
+				<h1>Marccello</h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="majors">Major</a></li>
+					<li>Courses</li>
+				</ul>
+				
+			<%= yield %>
+	
+			<p style="background:green; width:25em;">/app/views/layouts/application.html.erb</p>
+		</fieldset>
+	</body>
 </html>

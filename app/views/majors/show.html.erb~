@@ -1,5 +1,5 @@
 <fieldset>
-	<legend>show.html.erb</legend>
+	<legend></legend>
 	<p id="notice"><%= notice %></p>
 
 	<p>

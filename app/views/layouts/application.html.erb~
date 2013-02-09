@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marcello</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<fieldset>
+	<legend>main application</legend>
+	<p style="background:orange; width: 25em;">The green highlighted text at the bottom of each fieldset is the path to the document that can edit that fieldset.</p>
+
+<%= yield %>
+</fieldset>
+<p style="background:green; width:25em;">/app/views/layouts/application.html.erb</p>
+</body>
+</html>
