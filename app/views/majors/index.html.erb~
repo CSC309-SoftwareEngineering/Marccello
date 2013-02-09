@@ -1,6 +1,6 @@
 <fieldset>
-	<legend>index.html.erb</legend>
-	<h2>Listing majors</h2>
+	<legend>show.html.erb</legend>
+	<h1>Listing majors</h1>
 
 	<table>
 	  <tr>

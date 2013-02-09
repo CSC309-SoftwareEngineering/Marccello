@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Marcello!</title>
+		<style type="text/css" media="screen"></style>
+		<script type="text/javascript"></script>
+	</head>
+	<body>
+		<fieldset>
+			<h1>Marccello Main Page</h1>
+			<ul>
+				<li><a href="majors">Major<a></li>
+			</ul>
+		</fieldset>
+	  </body>
+</html>
