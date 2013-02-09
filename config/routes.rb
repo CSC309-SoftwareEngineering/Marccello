@@ -1,4 +1,7 @@
 Marcello::Application.routes.draw do
+  resources :majors
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

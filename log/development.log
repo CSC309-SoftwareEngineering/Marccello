@@ -1,0 +1,429 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-02-09 10:40:04 -0500
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (5ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (10.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (5.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateMajors (20130209161737)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "majors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "major" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130209161737')[0m
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-09 11:18:09 -0500
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /home/csc309/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/csc309/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/csc309/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/csc309/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-02-09 11:18:12 -0500
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /home/csc309/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/csc309/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/csc309/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/csc309/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/majors" for 127.0.0.1 at 2013-02-09 11:18:21 -0500
+Processing by MajorsController#index as HTML
+  [1m[36mMajor Load (2.2ms)[0m  [1mSELECT "majors".* FROM "majors" [0m
+  Rendered majors/index.html.erb within layouts/application (0.9ms)
+Compiled majors.css  (5ms)  (pid 3136)
+Compiled scaffolds.css  (12ms)  (pid 3136)
+Compiled application.css  (44ms)  (pid 3136)
+Compiled jquery.js  (1ms)  (pid 3136)
+Compiled jquery_ujs.js  (0ms)  (pid 3136)
+Compiled majors.js  (103ms)  (pid 3136)
+Compiled application.js  (145ms)  (pid 3136)
+Completed 200 OK in 284ms (Views: 250.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:22 -0500
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:22 -0500
+Served asset /majors.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:22 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:22 -0500
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:22 -0500
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:22 -0500
+Served asset /majors.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:22 -0500
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/majors/new" for 127.0.0.1 at 2013-02-09 11:18:25 -0500
+Processing by MajorsController#new as HTML
+  Rendered majors/_form.html.erb (10.1ms)
+  Rendered majors/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 30ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:25 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:25 -0500
+Served asset /majors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:25 -0500
+Served asset /majors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:25 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:25 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:25 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:25 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/majors/new" for 127.0.0.1 at 2013-02-09 11:18:31 -0500
+Processing by MajorsController#new as HTML
+  Rendered majors/_form.html.erb (8.5ms)
+  Rendered majors/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:32 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:32 -0500
+Served asset /majors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:32 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:32 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:32 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:32 -0500
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:32 -0500
+Served asset /majors.css - 304 Not Modified (0ms)
+
+
+Started POST "/majors" for 127.0.0.1 at 2013-02-09 11:18:39 -0500
+Processing by MajorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eU0OOCZpSnS2RDOh7E9x+BWMmD95ypdAbrEA8XDArlg=", "major"=>{"major"=>"Basket waver"}, "commit"=>"Create Major"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (12.9ms)[0m  [1mINSERT INTO "majors" ("created_at", "major", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 09 Feb 2013 16:18:39 UTC +00:00], ["major", "Basket waver"], ["updated_at", Sat, 09 Feb 2013 16:18:39 UTC +00:00]]
+  [1m[35m (19.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/majors/1
+Completed 302 Found in 38ms (ActiveRecord: 32.6ms)
+
+
+Started GET "/majors/1" for 127.0.0.1 at 2013-02-09 11:18:39 -0500
+Processing by MajorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMajor Load (0.2ms)[0m  [1mSELECT "majors".* FROM "majors" WHERE "majors"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered majors/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:39 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:39 -0500
+Served asset /majors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:39 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:39 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:39 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:39 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:39 -0500
+Served asset /majors.css - 304 Not Modified (0ms)
+
+
+Started GET "/majors" for 127.0.0.1 at 2013-02-09 11:18:41 -0500
+Processing by MajorsController#index as HTML
+  [1m[35mMajor Load (0.2ms)[0m  SELECT "majors".* FROM "majors" 
+  Rendered majors/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:41 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:41 -0500
+Served asset /majors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:41 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:41 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:41 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:41 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:41 -0500
+Served asset /majors.css - 304 Not Modified (0ms)
+
+
+Started DELETE "/majors/1" for 127.0.0.1 at 2013-02-09 11:18:45 -0500
+Processing by MajorsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eU0OOCZpSnS2RDOh7E9x+BWMmD95ypdAbrEA8XDArlg=", "id"=>"1"}
+  [1m[36mMajor Load (0.1ms)[0m  [1mSELECT "majors".* FROM "majors" WHERE "majors"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "majors" WHERE "majors"."id" = ?[0m  [["id", 1]]
+  [1m[35m (16.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/majors
+Completed 302 Found in 21ms (ActiveRecord: 16.4ms)
+
+
+Started GET "/majors" for 127.0.0.1 at 2013-02-09 11:18:45 -0500
+Processing by MajorsController#index as HTML
+  [1m[36mMajor Load (0.0ms)[0m  [1mSELECT "majors".* FROM "majors" [0m
+  Rendered majors/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:45 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:45 -0500
+Served asset /majors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:45 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:45 -0500
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:45 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:45 -0500
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:45 -0500
+Served asset /majors.css - 304 Not Modified (0ms)
+
+
+Started GET "/majors/new" for 127.0.0.1 at 2013-02-09 11:18:45 -0500
+Processing by MajorsController#new as HTML
+  Rendered majors/_form.html.erb (1.4ms)
+  Rendered majors/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:46 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:46 -0500
+Served asset /majors.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:46 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:46 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:46 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:46 -0500
+Served asset /majors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:46 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/majors" for 127.0.0.1 at 2013-02-09 11:18:54 -0500
+Processing by MajorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eU0OOCZpSnS2RDOh7E9x+BWMmD95ypdAbrEA8XDArlg=", "major"=>{"major"=>"Basket Weaver"}, "commit"=>"Create Major"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "majors" ("created_at", "major", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sat, 09 Feb 2013 16:18:54 UTC +00:00], ["major", "Basket Weaver"], ["updated_at", Sat, 09 Feb 2013 16:18:54 UTC +00:00]]
+  [1m[35m (9.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/majors/2
+Completed 302 Found in 14ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/majors/2" for 127.0.0.1 at 2013-02-09 11:18:54 -0500
+Processing by MajorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMajor Load (0.1ms)[0m  [1mSELECT "majors".* FROM "majors" WHERE "majors"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered majors/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:54 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:54 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:54 -0500
+Served asset /majors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:54 -0500
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:54 -0500
+Served asset /majors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:54 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:54 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/majors" for 127.0.0.1 at 2013-02-09 11:18:56 -0500
+Processing by MajorsController#index as HTML
+  [1m[35mMajor Load (0.1ms)[0m  SELECT "majors".* FROM "majors" 
+  Rendered majors/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:56 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:56 -0500
+Served asset /majors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:56 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:56 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:56 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-09 11:18:56 -0500
+Served asset /majors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-09 11:18:56 -0500
+Served asset /application.js - 304 Not Modified (1ms)
