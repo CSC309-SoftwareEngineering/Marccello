@@ -7,12 +7,26 @@ Marccello is a tool designed to do things with other things. We use these things
 
 1. Pull this repository to a local folder (we use ~/marccello)
 
-2. run rails -s to run a local rails server 
+2. run 'bundle install'
 
-3. visit localhost:3000 to see the local site running on your machine
+3. run 'rake db:migrate' to create any new tables that may have been created
 
-4. do more things, with other stuff! 
+4. run 'rake bd:seed' to load the database seed file
 
+5. run rails -s to run a local rails server 
+
+6. visit localhost:3000 to see the local site running on your machine
+
+7. do more things, with other stuff! 
+
+
+== How do I add things to this repository?
+
+1. git add -A 'filepath of file to add'
+
+2. git commit -m "commit message here"
+
+3. git push origin master
 
 == Description of Contents
 
