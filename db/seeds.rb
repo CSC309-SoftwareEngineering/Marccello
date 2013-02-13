@@ -9,5 +9,5 @@
 
 majors = Major.create([{major: 'Basket Weaving'},{major: 'Clog Dancing'},{major: 'Astronaut Engineering'}, {major: 'Computer Stuff'}])
 
-courses = Course.create([{dep: 'CSC', number:101 , name: "Introduction to programing" }])
+courses = Course.create([{dep: 'CSC', number:101 , name: "Introduction to programing" }, {dep: 'CSC', number:452 , name: "Computer Security" }])
 

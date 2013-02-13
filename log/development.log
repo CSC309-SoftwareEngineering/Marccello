@@ -1305,6 +1305,7 @@ Served asset /majors.js - 304 Not Modified (2ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-12 19:48:24 -0500
 Served asset /application.js - 304 Not Modified (51ms)
+<<<<<<< HEAD
 Connecting to database specified by database.yml
   [1m[36m (1.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
 Connecting to database specified by database.yml
@@ -1382,3 +1383,178 @@ Served asset /courses.js - 200 OK (1ms)
 
 Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-12 19:52:40 -0500
 Served asset /majors.js - 304 Not Modified (1ms)
+=======
+
+
+Started GET "/majors" for 127.0.0.1 at 2013-02-12 20:02:51 -0500
+Connecting to database specified by database.yml
+Processing by MajorsController#index as HTML
+  [1m[36mMajor Load (0.2ms)[0m  [1mSELECT "majors".* FROM "majors" [0m
+  Rendered majors/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 205ms (Views: 127.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-12 20:02:53 -0500
+Served asset /application.css - 304 Not Modified (61ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-02-12 20:02:53 -0500
+Served asset /courses.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-12 20:02:53 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-12 20:02:53 -0500
+Served asset /jquery.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-12 20:02:53 -0500
+Served asset /scaffolds.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-12 20:02:53 -0500
+Served asset /majors.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-02-12 20:02:53 -0500
+Served asset /courses.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-12 20:02:53 -0500
+Served asset /majors.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-12 20:02:53 -0500
+Served asset /application.js - 304 Not Modified (41ms)
+
+
+Started GET "/majors" for 127.0.0.1 at 2013-02-12 20:04:05 -0500
+Processing by MajorsController#index as HTML
+  [1m[35mMajor Load (0.4ms)[0m  SELECT "majors".* FROM "majors" 
+  Rendered majors/index.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 164ms (Views: 146.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-12 20:04:05 -0500
+Served asset /application.css - 304 Not Modified (54ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:05 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-02-12 20:04:05 -0500
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-12 20:04:05 -0500
+Served asset /majors.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-12 20:04:05 -0500
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:05 -0500
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:05 -0500
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:05 -0500
+Served asset /majors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:05 -0500
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/majors" for 127.0.0.1 at 2013-02-12 20:04:14 -0500
+Processing by MajorsController#index as HTML
+  [1m[36mMajor Load (0.4ms)[0m  [1mSELECT "majors".* FROM "majors" [0m
+  Rendered majors/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 47ms (Views: 44.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-12 20:04:14 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:14 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:14 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-12 20:04:14 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-12 20:04:14 -0500
+Served asset /majors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-02-12 20:04:14 -0500
+Served asset /courses.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:14 -0500
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:14 -0500
+Served asset /majors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:14 -0500
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2013-02-12 20:04:22 -0500
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered courses/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 141ms (Views: 71.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-12 20:04:23 -0500
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-12 20:04:23 -0500
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-12 20:04:23 -0500
+Served asset /majors.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-02-12 20:04:23 -0500
+Served asset /courses.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:23 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:23 -0500
+Served asset /courses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:23 -0500
+Served asset /majors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-12 20:04:23 -0500
+Served asset /application.js - 304 Not Modified (16ms)
+>>>>>>> 90f8889f39ee27d0fcc0be50016bfa49cf803e7d
