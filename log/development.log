@@ -1049,3 +1049,259 @@ Served asset /scaffolds.css - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-12 18:58:41 -0500
 Served asset /application.js - 304 Not Modified (7ms)
+Connecting to database specified by database.yml
+  [1m[36m (21.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (28.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/majors" for 127.0.0.1 at 2013-02-12 19:20:14 -0500
+Connecting to database specified by database.yml
+Processing by MajorsController#index as HTML
+  [1m[36mMajor Load (0.2ms)[0m  [1mSELECT "majors".* FROM "majors" [0m
+  Rendered majors/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 163ms (Views: 92.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-12 19:20:15 -0500
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-12 19:20:15 -0500
+Served asset /majors.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-12 19:20:15 -0500
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-12 19:20:15 -0500
+Served asset /majors.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-12 19:20:15 -0500
+Served asset /jquery.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-12 19:20:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-12 19:20:15 -0500
+Served asset /application.js - 304 Not Modified (25ms)
+
+
+Started GET "/majors" for 127.0.0.1 at 2013-02-12 19:20:43 -0500
+Processing by MajorsController#index as HTML
+  [1m[35mMajor Load (0.3ms)[0m  SELECT "majors".* FROM "majors" 
+  Rendered majors/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-12 19:20:43 -0500
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-12 19:20:43 -0500
+Served asset /majors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-12 19:20:43 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-12 19:20:43 -0500
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-12 19:20:43 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-12 19:20:43 -0500
+Served asset /majors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-12 19:20:43 -0500
+Served asset /application.js - 304 Not Modified (17ms)
+Connecting to database specified by database.yml
+  [1m[36m (21.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (22.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (41.3ms)[0m  [1mINSERT INTO "majors" ("created_at", "major", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 13 Feb 2013 00:21:40 UTC +00:00], ["major", "Basket Weaving"], ["updated_at", Wed, 13 Feb 2013 00:21:40 UTC +00:00]]
+  [1m[35m (61.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "majors" ("created_at", "major", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 13 Feb 2013 00:21:40 UTC +00:00], ["major", "Clog Dancing"], ["updated_at", Wed, 13 Feb 2013 00:21:40 UTC +00:00]]
+  [1m[36m (14.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "majors" ("created_at", "major", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 13 Feb 2013 00:21:40 UTC +00:00], ["major", "Astronaut Engineering"], ["updated_at", Wed, 13 Feb 2013 00:21:40 UTC +00:00]]
+  [1m[35m (31.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "majors" ("created_at", "major", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 13 Feb 2013 00:21:41 UTC +00:00], ["major", "Computer Stuff"], ["updated_at", Wed, 13 Feb 2013 00:21:41 UTC +00:00]]
+  [1m[36m (44.2ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/majors" for 127.0.0.1 at 2013-02-12 19:21:58 -0500
+Connecting to database specified by database.yml
+Processing by MajorsController#index as HTML
+  [1m[36mMajor Load (0.3ms)[0m  [1mSELECT "majors".* FROM "majors" [0m
+  Rendered majors/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 178ms (Views: 100.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-12 19:21:59 -0500
+Served asset /application.css - 304 Not Modified (65ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-12 19:21:59 -0500
+Served asset /majors.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-12 19:21:59 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-12 19:21:59 -0500
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-12 19:21:59 -0500
+Served asset /majors.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-12 19:21:59 -0500
+Served asset /scaffolds.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-12 19:21:59 -0500
+Served asset /application.js - 304 Not Modified (27ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (31.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMajors (20130209161737)
+Migrating to CreateCourses (20130213004509)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (17.2ms)[0m  CREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "dep" varchar(255), "number" integer, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130213004509')[0m
+  [1m[35m (44.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/courses" for 127.0.0.1 at 2013-02-12 19:45:46 -0500
+Connecting to database specified by database.yml
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.erb within layouts/application (5.4ms)
+Compiled courses.css  (43ms)  (pid 2417)
+Compiled application.css  (55ms)  (pid 2417)
+Compiled courses.js  (659ms)  (pid 2417)
+Compiled application.js  (680ms)  (pid 2417)
+Completed 200 OK in 1132ms (Views: 1064.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-12 19:45:48 -0500
+Served asset /application.css - 304 Not Modified (119ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-12 19:45:48 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-12 19:45:48 -0500
+Served asset /jquery.js - 304 Not Modified (71ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-12 19:45:48 -0500
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-12 19:45:48 -0500
+Served asset /majors.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-02-12 19:45:48 -0500
+Served asset /courses.css - 200 OK (11ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-02-12 19:45:48 -0500
+Served asset /courses.js - 200 OK (11ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-12 19:45:49 -0500
+Served asset /majors.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-12 19:45:49 -0500
+Served asset /application.js - 304 Not Modified (50ms)
+Connecting to database specified by database.yml
+  [1m[36m (2.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (2.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (11.9ms)[0m  [1mINSERT INTO "majors" ("created_at", "major", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 13 Feb 2013 00:48:07 UTC +00:00], ["major", "Basket Weaving"], ["updated_at", Wed, 13 Feb 2013 00:48:07 UTC +00:00]]
+  [1m[35m (41.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "majors" ("created_at", "major", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 13 Feb 2013 00:48:07 UTC +00:00], ["major", "Clog Dancing"], ["updated_at", Wed, 13 Feb 2013 00:48:07 UTC +00:00]]
+  [1m[36m (44.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "majors" ("created_at", "major", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 13 Feb 2013 00:48:07 UTC +00:00], ["major", "Astronaut Engineering"], ["updated_at", Wed, 13 Feb 2013 00:48:07 UTC +00:00]]
+  [1m[35m (50.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "majors" ("created_at", "major", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 13 Feb 2013 00:48:07 UTC +00:00], ["major", "Computer Stuff"], ["updated_at", Wed, 13 Feb 2013 00:48:07 UTC +00:00]]
+  [1m[36m (39.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "courses" ("created_at", "dep", "name", "number", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Wed, 13 Feb 2013 00:48:07 UTC +00:00], ["dep", "CSC"], ["name", "Introduction to programing"], ["number", 101], ["updated_at", Wed, 13 Feb 2013 00:48:07 UTC +00:00]]
+  [1m[35m (55.1ms)[0m  commit transaction
+
+
+Started GET "/courses" for 127.0.0.1 at 2013-02-12 19:48:22 -0500
+Connecting to database specified by database.yml
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 345ms (Views: 202.7ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2013-02-12 19:48:23 -0500
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered courses/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-12 19:48:23 -0500
+Served asset /application.css - 304 Not Modified (45ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-12 19:48:23 -0500
+Served asset /jquery.js - 304 Not Modified (96ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-12 19:48:24 -0500
+Served asset /scaffolds.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/majors.css?body=1" for 127.0.0.1 at 2013-02-12 19:48:24 -0500
+Served asset /majors.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-02-12 19:48:24 -0500
+Served asset /courses.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-12 19:48:24 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-02-12 19:48:24 -0500
+Served asset /courses.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/majors.js?body=1" for 127.0.0.1 at 2013-02-12 19:48:24 -0500
+Served asset /majors.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-12 19:48:24 -0500
+Served asset /application.js - 304 Not Modified (51ms)

@@ -6,4 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-majors =majors.create([{major: 'basket weaving'}, {major: 'astronaut engineering'}, {major: 'ruby expert'}])
+
+majors = Major.create([{major: 'Basket Weaving'},{major: 'Clog Dancing'},{major: 'Astronaut Engineering'}, {major: 'Computer Stuff'}])
+
+courses = Course.create([{dep: 'CSC', number:101 , name: "Introduction to programing" }])
+

@@ -1,5 +1,5 @@
 <fieldset>
-	<legend>new.html.erb</legend>
+	<legend>show.html.erb</legend>
 	<h1>New major</h1>
 
 	<%= render 'form' %>
