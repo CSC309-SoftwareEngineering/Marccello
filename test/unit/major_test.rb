@@ -2,6 +2,6 @@ require 'test_helper'
 
 class MajorTest < ActiveSupport::TestCase
   test "the truth" do
-     assert true
+     assert false
   end
 end
