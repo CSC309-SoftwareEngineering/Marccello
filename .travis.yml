@@ -5,9 +5,8 @@ env:
   - DB=sqlite
 script:
   - RAILS_ENV=test bundle exec rake --trace db:migrate
-
+  - rake test:units
 notifications:
   email:
     on_success: change
     on_failure: always
-
