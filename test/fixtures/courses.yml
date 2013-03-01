@@ -1,11 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  dep: MyString
-  number: 1
-  name: MyString
+  department: MyString
+  course_number: 1
 
 two:
-  dep: MyString
-  number: 1
-  name: MyString
+  department: MyString
+  course_number: 1

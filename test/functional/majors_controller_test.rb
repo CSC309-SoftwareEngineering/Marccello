@@ -18,7 +18,7 @@ class MajorsControllerTest < ActionController::TestCase
 
   test "should create major" do
     assert_difference('Major.count') do
-      post :create, major: { major: @major.major }
+      post :create, major: { name: @major.name }
     end
 
     assert_redirected_to major_path(assigns(:major))
@@ -35,7 +35,7 @@ class MajorsControllerTest < ActionController::TestCase
   end
 
   test "should update major" do
-    put :update, id: @major, major: { major: @major.major }
+    put :update, id: @major, major: { name: @major.name }
     assert_redirected_to major_path(assigns(:major))
   end
 

@@ -1,17 +1,10 @@
-<fieldset>
-	<legend>show.html.erb</legend>
-	<p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
-	<p>
-	  <b>Major:</b>
-	  <%= @major.major %>
-	</p>
+<p>
+  <b>Name:</b>
+  <%= @major.name %>
+</p>
 
 
-	<%= link_to 'Edit', edit_major_path(@major) %> |
-	<%= link_to 'Back', majors_path %>
-
-	<p><%= Rails.public_path %></p>
-
-	<p style="background:green; width:25em;">/app/views/majors/show.html.erb</p>
-</fieldset>
+<%= link_to 'Edit', edit_major_path(@major) %> |
+<%= link_to 'Back', majors_path %>

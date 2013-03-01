@@ -10,6 +10,17 @@ class MajorsController < ApplicationController
     end
   end
 
+  # GET /majors
+  # GET /majors.json
+  def display
+    @majors = Major.all
+
+    respond_to do |format|
+      format.html # display.html.erb
+      format.json { render json: @majors }
+    end
+  end
+
   # GET /majors/1
   # GET /majors/1.json
   def show
