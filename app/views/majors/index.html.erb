@@ -1,18 +1,38 @@
+<%= javascript_include_tag "MoveToSemester" %>
+
 <h1>Listing majors</h1>
 
 <%= form_tag({}, {:method => :get}) do %>
 
-  Select a major: <%= select_tag :id, options_from_collection_for_select(Major.find(:all), :id, :name), {:onchange => "this.form.submit();", :selected => params[:id], :include_blank => true } %>
+  Select a major: <%= select_tag :id, options_from_collection_for_select(Major.find(:all, :order => :name), :id, :name), {:onchange => "this.form.submit();", :include_blank => true } %>
+<% end %>
+<% if params[:id] != nil %>
+  <% @selected = Major.find(params[:id]) %>
+
+
+  <%= form_tag({}, {:method => :get}) do %>
+    <table id="semester">
+      <tr>
+        <th><%= @selected.name %></th>
+        <th>Semester</th>
+      <tr>
+        <% if (not @selected.courses.empty?) %>
+          <% @selected.courses.each do |course| %>
+            <tr>
+              <td><%= check_box_tag(course.id, course.name) %><%= course.name %></td>
+	      <td></td>
+            </tr>
+          <% end %>
+        <% end %>
+      <tr><td><%= submit_tag("Add ->") %></td></tr>
+    </table>
+
+    
+  <% end %>
 <% end %>
 
-<% @selected = Major.find(params[:id]) %>
+<br /><br />
 
-
-<p>Selected: <%= @selected.name %></p>
-
-<% if (not @selected.courses.empty?) %>
-<%= select_tag :id, options_from_collection_for_select(@selected.courses, :id, :name) %>
-<% end %>
 <table>
   <tr>
     <th>Name</th>
