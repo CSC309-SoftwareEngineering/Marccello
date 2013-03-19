@@ -14,22 +14,22 @@ majors = Major.create([
 		{name: 'Computer Stuff'}])
 
 courses = Course.create([
-		{department: 'BKW', course_number: 101 }, 
-		{department: 'BKW', course_number: 201 },
-		{department: 'BKW', course_number: 301 },
-		{department: 'BKW', course_number: 401 },
-		{department: 'CGD', course_number: 101 }, 
-		{department: 'CGD', course_number: 201 },
-		{department: 'CGD', course_number: 301 },
-		{department: 'CGD', course_number: 401 },
-		{department: 'AEG', course_number: 101 }, 
-		{department: 'AEG', course_number: 201 },
-		{department: 'AEG', course_number: 301 },
-		{department: 'AEG', course_number: 401 },
-		{department: 'CPS', course_number: 101 }, 
-		{department: 'CPS', course_number: 201 },
-		{department: 'CPS', course_number: 301 },
-		{department: 'CPS', course_number: 401 }])
+		{department: 'BKW', course_number: 101, name: 'BKW 101' }, 
+		{department: 'BKW', course_number: 201, name: 'BKW 201' },
+		{department: 'BKW', course_number: 301, name: 'BKW 301' },
+		{department: 'BKW', course_number: 401, name: 'BKW 401' },
+		{department: 'CGD', course_number: 101, name: 'CGD 101' }, 
+		{department: 'CGD', course_number: 201, name: 'CGD 201' },
+		{department: 'CGD', course_number: 301, name: 'CGD 301' },
+		{department: 'CGD', course_number: 401, name: 'CGD 401' },
+		{department: 'AEG', course_number: 101, name: 'AEG 101' }, 
+		{department: 'AEG', course_number: 201, name: 'AEG 201' },
+		{department: 'AEG', course_number: 301, name: 'AEG 301' },
+		{department: 'AEG', course_number: 401, name: 'AEG 401' },
+		{department: 'CPS', course_number: 101, name: 'CPS 101' },
+		{department: 'CPS', course_number: 201, name: 'CPS 201' },
+		{department: 'CPS', course_number: 301, name: 'CPS 301' },
+		{department: 'CPS', course_number: 401, name: 'CPS 401' }])
 
 requirements = Requirement.create([
 		{course_id: 1, major_id: 1},
