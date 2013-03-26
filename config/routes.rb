@@ -1,4 +1,7 @@
 Marcello::Application.routes.draw do
+  resources :semesters
+
+
   resources :courses
 
 

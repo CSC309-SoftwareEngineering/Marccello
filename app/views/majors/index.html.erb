@@ -10,26 +10,22 @@
 <% end %>
 <% if params[:id] != nil %>
   <% @selected = Major.find(params[:id]) %>
-
-
   <%= form_tag({}, {:method => :get}) do %>
     <table id="semester">
       <tr>
         <th><%= @selected.name %></th>
-        <th>Semester</th>
       <tr>
         <% if (not @selected.courses.empty?) %>
           <% @selected.courses.each do |course| %>
             <tr>
-              <td><%= check_box_tag(course.id, course.name) %><%= course.name %></td>
-	      <td></td>
+              <td><%= check_box_tag(:name, course.name) %><%= course.name %></td>
             </tr>
           <% end %>
         <% end %>
-      <tr><td><%= submit_tag("Add ->") %></td></tr>
+      <tr>
+        <td><%= submit_tag("Add ->") %></td>
+      </tr>
     </table>
-
-    
   <% end %>
 <% end %>
 
