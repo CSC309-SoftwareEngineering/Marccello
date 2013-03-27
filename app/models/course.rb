@@ -4,5 +4,5 @@ class Course < ActiveRecord::Base
   has_many :requirements
   has_many :majors, :through => :requirements
   has_many :classlists
-  has_many :semesters :through => :classlists
+  has_many :semesters, :through => :classlists
 end
